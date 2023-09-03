@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/coder/project/workspace/mvc/dotnetapp/dotnetapp.csproj": {}
+    "/home/coder/project/workspace/sriram-mvc-ado/mvc/dotnetapp/dotnetapp.csproj": {}
   },
   "projects": {
-    "/home/coder/project/workspace/mvc/dotnetapp/dotnetapp.csproj": {
+    "/home/coder/project/workspace/sriram-mvc-ado/mvc/dotnetapp/dotnetapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/coder/project/workspace/mvc/dotnetapp/dotnetapp.csproj",
+        "projectUniqueName": "/home/coder/project/workspace/sriram-mvc-ado/mvc/dotnetapp/dotnetapp.csproj",
         "projectName": "dotnetapp",
-        "projectPath": "/home/coder/project/workspace/mvc/dotnetapp/dotnetapp.csproj",
+        "projectPath": "/home/coder/project/workspace/sriram-mvc-ado/mvc/dotnetapp/dotnetapp.csproj",
         "packagesPath": "/home/coder/.nuget/packages/",
-        "outputPath": "/home/coder/project/workspace/mvc/dotnetapp/obj/",
+        "outputPath": "/home/coder/project/workspace/sriram-mvc-ado/mvc/dotnetapp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/coder/.nuget/NuGet/NuGet.Config"
@@ -49,6 +49,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
             },
             "Nunit": {
               "target": "Package",

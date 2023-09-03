@@ -2,20 +2,29 @@
 
 <h2>Employee List</h2>
 
+@using (Html.BeginForm("Search", "Employee", FormMethod.Get))
+{
+    <div class="input-group mb-3">
+        <input type="text" name="query" class="form-control" placeholder="Search by ID or Name" aria-label="Search by ID or Name" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </div>
+    </div>
+}
+
 <table class="table">
-    <thead>
+    <thead class="table">
         <tr>
             <th>Employee ID</th>
             <th>Name</th>
             <th>DOB</th>
-            <th>Gender<th>
+            <th>Gender</th>
             <th>Department</th>
             <th>Position</th>
-            <th>salary</th>
+            <th>Salary</th>
             <th>Email</th>
-            <th>phoneNumber</th>
+            <th>Phone Number</th>
             <th>Address</th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -32,12 +41,7 @@
                 <td>@emp.Email</td>
                 <td>@emp.phoneNumber</td>
                 <td>@emp.Address</td>
-                 <td>
-                    <!-- <a asp-action="Details" asp-route-id="@emp.id">Details</a> | -->
-                    <a asp-action="Edit" asp-route-id="@emp.id">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@emp.id">Delete</a>
-                </td>
-
+                
             </tr>
         }
     </tbody>
